@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Naplóm</string>
+    <string name="remove">Eltávolítás</string>
+    <string name="edit">Szerkesztés</string>
+    <string name="confirm_delete">Biztosan törölni szeretnéd a bejegyzést ezzel a címmel</string>
+</resources>

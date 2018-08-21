@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/postListPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="25sp"
+        tools:text="Cím" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:contentDescription="TODO"
+            android:foregroundGravity="top"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/postListPostDate"
+            style="@style/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="top"
+            android:text="2018.01.02." />
+    </org.apmem.tools.layouts.FlowLayout>
+
+    <TextView
+        android:id="@+id/postListPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/removePostButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorAccent"
+            android:minHeight="30dp"
+            android:minWidth="80dp"
+            android:text="@string/remove"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/editPostButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"
+            android:minHeight="30dp"
+            android:minWidth="80dp"
+            android:text="@string/edit"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </org.apmem.tools.layouts.FlowLayout>
+</LinearLayout>
